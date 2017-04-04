@@ -14,23 +14,34 @@
 #### 1. Install
 <p>Include jQuery and jQuery-ui in your page:</p>
 ```html
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
 ```
 **_Include Plugin in your page:_**
+
 ```html
+
 <script type="text/javascript" src="./js/jquery.tbltree.js"></script>
 <link type="text/css" href="css/jquery.tbltree.css" rel="stylesheet">
+
 ```
+
 If you want to use `saveState:` option, then need to include $.coocke plugin as well:
+
 ```html
+
 <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+
 ```
 
 #### 2. Make a tree
 <p>Create HTML Table by adding 'row-id' and 'parent-id' attributes to "tr" tags.
 Attributes names can be configured by options `rowAttr` and `parrentAttr`.</p>
+
 ```html
+
 <table id="table1">
   <tr>
     <td>Title</td><td>Column 1</td><td>Column 2</td><td>Column 3</td>
@@ -48,14 +59,18 @@ Attributes names can be configured by options `rowAttr` and `parrentAttr`.</p>
     <td>Level 2.1</td><td class="data">2</td><td class="data">2</td><td class="data">2</td>
   </tr>
 </table>
+
 ```
 
 <p>Add javascript code:</p>
+
 ```javascript
+
  $(function() {
      // initialize with default options
     $( "#table1" ).tbltree();
   });
+  
 ```
 
 
